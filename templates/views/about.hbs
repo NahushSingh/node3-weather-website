@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <img class="portrait" src="/img/weatherstack.png">
+        <p>
+            This Website uses
+            <a href="https://weatherstack.com/" style="text-decoration: none; color:royalblue;">
+                Weathersatck Api</a>
+        </p>
+
+        <img class="portrait" src="/img/mapbox.png">
+        <p>
+            and
+            <a href="https://www.mapbox.com/" style="text-decoration: none; color:royalblue;">
+                Mapbox Api</a>
+        </p>
+    </div>
+    {{>footer}}
+</body>
+
+</html>
