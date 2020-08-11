@@ -1,5 +1,5 @@
 body {
-    color: #333333;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     max-width: 650px;
     margin: 0 auto;
@@ -9,11 +9,13 @@ body {
     flex-direction: column;
 
     min-height: 100vh;
+    background: url(https://www.survivingwithandroid.com/wp-content/uploads/2014/11/android_weather_app.jpg);
+    background-size: cover;
 }
  footer {
      color: #888888;
      border-top: 1px solid #eeeeee;
-     padding: 16px 0;
+     padding: 10px 0;
      margin-top: 16px;
  }
 
@@ -28,8 +30,9 @@ body {
  }
 
  header a {
-     color:#888888;
+     color:#492b2b;
      margin-right: 16px;
+     font-weight: 700;
      text-decoration:none;
  }
 
@@ -51,4 +54,30 @@ body {
       background: #888888;
       color: white;
       padding: 8px;
+  }
+
+  #forecast {
+      display: none;
+      grid-template-columns: auto auto;
+      padding:20px 10px;
+      margin-top: 10px;
+      background: transparent;
+
+          box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  #forecast span {
+      padding: 2px;
+      padding-left: 20%;
+  }
+
+  #forecast img {
+      margin-left: 20%;
+      border-radius: 20%;
+      grid-area: 1/2/3/3;
+  }
+  #forecast span:nth-child(1), #forecast span:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding-left: 20%;
   }
